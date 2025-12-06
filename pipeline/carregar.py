@@ -16,10 +16,15 @@ def carregar_dados(caminho_arquivo):
         DataFrame com os dados
     """
     # TODO 1: Use pd.read_csv() para carregar o arquivo
-    # Dica: df = pd.read_csv(caminho_arquivo)
-    
-    df = None  # Substitua None pelo código correto
-    
+    # Inserido o carregamento dos dados em um bloco de try-catch para tratar eventuais erros
+    try:
+        df = pd.read_csv(caminho_arquivo)
+    except FileNotFoundError:
+        print(f"Arquivo não encontrado: {caminho_arquivo}")
+        return None
+    except Exception as e:
+        print(f"Erro ao carregar o arquivo: {e}")
+        return None    
     return df
 
 
@@ -35,15 +40,15 @@ def explorar_dados(df):
     print("=" * 50)
     
     # TODO 2: Mostre o shape do DataFrame (linhas, colunas)
-    # Dica: print(f"Shape: {df.shape}")
+    print(f"Shape: {df.shape}")
     
     
     # TODO 3: Mostre os tipos de cada coluna
-    # Dica: print(df.dtypes)
+    print(df.dtypes)
     
     
     # TODO 4: Mostre as 5 primeiras linhas
-    # Dica: print(df.head())
+    print(df.head())
     
     
     print("=" * 50)
