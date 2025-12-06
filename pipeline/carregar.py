@@ -37,22 +37,33 @@ def explorar_dados(df):
     """
     print("=" * 50)
     print("EXPLORAÇÃO DOS DADOS")
-    print("=" * 50)
+    print("=" * 50, end="\n\n")
     
     # TODO 2: Mostre o shape do DataFrame (linhas, colunas)
-    print(f"Shape: {df.shape}")
+    print("*" * 50)
+    print("\nSHAPE DO DATAFRAME\n")
     
+    print(f"Shape: {df.shape}")
+    print("=" * 50, end="\n\n")
     
     # TODO 3: Mostre os tipos de cada coluna
+    print("*" * 50)
+    print("\nTIPOS DAS COLUNAS\n")
+    print("*" * 50)
     print(df.dtypes)
-    
+    print("=" * 50, end="\n\n")
     
     # TODO 4: Mostre as 5 primeiras linhas
+    print("*" * 50)
+    print("\nPrimeiras 5 linhas\n")
+    print("*" * 50)
     print(df.head())
-    
+    print("=" * 50, end="\n")
     
     print("=" * 50)
-
+    print("FIM DA EXPLORAÇÃO DOS DADOS")
+    print("=" * 50, end="\n\n")
+   
 
 def verificar_target(df, coluna_target='respondeu_campanha'):
     """
@@ -62,18 +73,29 @@ def verificar_target(df, coluna_target='respondeu_campanha'):
         df: DataFrame
         coluna_target: nome da coluna target
     """
+    print("=" * 50)
     print("\nDISTRIBUIÇÃO DO TARGET")
     print("-" * 30)
     
     # TODO 5: Mostre a contagem de cada valor do target
-    # Dica: print(df[coluna_target].value_counts())
+    print("*" * 50)
+    print("\nCONTAGEM DE CADA VALOR DO TARGET\n")
+    print("*" * 50)
+    print(df[coluna_target].value_counts())
+    print("=" * 50, end="\n")
     
     
     # TODO 6: Mostre a proporção (percentual) de cada valor
-    # Dica: print(df[coluna_target].value_counts(normalize=True))
+    print("*" * 50)
+    print("\nCONTAGEM DE CADA VALOR DO TARGET\n")
+    print("*" * 50)
+    print(df[coluna_target].value_counts(normalize=True))
+    print("=" * 50, end="\n")    
     
     
+    print("\nFIM DA DISTRIBUIÇÃO DO TARGET")
     print("-" * 30)
+    print("=" * 50)
 
 
 # Teste local (executar este arquivo diretamente)
