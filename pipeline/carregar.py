@@ -53,6 +53,24 @@ def explorar_dados(df):
     print(df.dtypes)
     print("=" * 50, end="\n\n")
     
+    # Extra1: investiga Valores nulos por coluna 
+    print("*" * 50)
+    print("\nVALORES NULOS POR COLUNA\n")
+    print("*" * 50)
+    print(df.isna().sum())
+    print("=" * 50, end="\n\n")
+
+    # Extra2: Estatística descritiva
+    print("*" * 50)
+    print("\nESTATÍSTICAS DESCRITIVAS (VARIÁVEIS NUMÉRICAS)\n")
+    print("*" * 50)
+    
+    numericas = df.select_dtypes(include=["int64", "float64"])
+    print(numericas.describe())  # count, mean, std, min, quartis, max
+    
+    print("=" * 50, end="\n\n")
+    
+    
     # TODO 4: Mostre as 5 primeiras linhas
     print("*" * 50)
     print("\nPrimeiras 5 linhas\n")
