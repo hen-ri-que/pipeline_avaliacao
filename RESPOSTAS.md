@@ -193,7 +193,23 @@ Validar os dados antes de treinar o modelo é fundamental para garantir que o al
 ### 4.1 Liste os commits que vocês fizeram (copie do git log):
 <!-- Execute: git log --oneline e cole aqui -->
 ```
-(cole o output do git log aqui)
+3dd11e3 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'teste_modelo'
+82897f5 (teste_modelo) Utilização do mlflow para avaliar modelos
+a58ee17 Merge pull request #2 from rodrigo-mbarros-pages/feat/ajustes-treinar-respostas
+e11f3b9 Refina respostas no RESPOSTAS.md
+9805b62 Ajusta exploração dos dados, treinamento e respostas
+7d555b3 Inclusão de seaborn e matrix de correlação no graficos.ipynb
+69bc3ab Merge branch 'main' of https://github.com/hen-ri-que/pipeline_avaliacao
+8d08bfb (grafico) Adicionado graficos.ipynb e atualizado requirements.txt
+b8a48d7 Merge pull request #1 from rodrigo-mbarros-pages/feat/carregar-explorar-dados
+a6087d2 feat: adicioona análise descritiva na exploração dos dados
+8c611a1 Início da elaboração das respostas (RESPOSTAS.md)
+9afeb55 Configuração do treinamento do modelo.
+62a6145 Configuração e teste da validação dos dados.
+b3b4a49 Elaboração do arquivo carregar.py finalizada.
+9c417d9 Finalização do método carregar_dados em pipeline/carregar.py
+f8708dd Copia dos arquivos da atividade.
+d11f04f Initial commit
 ```
 
 ### 4.2 Por que mensagens de commit descritivas são importantes?
