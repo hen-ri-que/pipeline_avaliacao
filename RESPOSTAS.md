@@ -3,10 +3,10 @@
 ## Identificação do Grupo
 
 - **Integrantes:**
-  1. Nome:
-  2. Nome:
-  3. Nome:
-  4. Nome:
+  1. Nome: Henrique Pimentel
+  2. Nome: Rodrigo M. Barros
+  3. Nome: Felipe Gouveia
+  4. Nome: Suellyn Schopping
 
 ---
 
@@ -168,9 +168,6 @@ PIPELINE CONCLUÍDO COM SUCESSO!
      no modelo foi de 55.50%, um pouco acima da probabilidade de escolher um evento aleatório.
      No caso atual como os falsos positivos e falsos negativos importam igualmente o F1-Socre é a métrica mais robusta para avaliar o modelo.
 
-
-
-
 ---
 
 ## Parte 3: Validação de Dados
@@ -178,16 +175,16 @@ PIPELINE CONCLUÍDO COM SUCESSO!
 ### 3.1 Liste as validações Pandera que você implementou:
 <!-- Descreva cada validação que você adicionou -->
 
-1. cliente_id:
-2. idade:
-3. renda_mensal:
-4. score_credito:
-5. respondeu_campanha:
+1. cliente_id: tipo inteiro, não permite valores nulos, único para cada registro
+2. idade: tipo inteiro (18 a 80)
+3. renda_mensal: tipo float (1000 a 50000)
+4. score_credito: tipo float (300 a 850)
+5. respondeu_campanha: tipo inteiro (0 ou 1)
 
 ### 3.2 Por que validar dados ANTES de treinar o modelo?
 <!-- Pense no contexto de produção: o que aconteceria se dados inválidos entrassem no modelo? -->
 
-
+Validar os dados antes de treinar o modelo é fundamental para garantir que o algoritmo esteja aprendendo a partir de informações consistentes e compatíveis com o que esperamos ver em produção. Sem essa etapa, valores fora de faixa (ex.: idade negativa, renda absurda), tipos incorretos ou categorias inválidas podem entrar silenciosamente no pipeline e afetar o modelo.
 
 ---
 
